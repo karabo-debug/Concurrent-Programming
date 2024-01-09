@@ -1,0 +1,341 @@
+commit 9ebc1a84358e6845e330c9a98b7d26d585a2c05e
+Author: Lehlohonolo Mosikili <mskleh001@myuct.ac.za>
+Date:   Fri Aug 25 14:01:05 2023 +0200
+
+    Remove unused imports
+
+commit 80b5716249ec0e5d264058f903cec9ea069fca77
+Author: Lehlohonolo Mosikili <mskleh001@myuct.ac.za>
+Date:   Fri Aug 25 08:59:16 2023 +0200
+
+    Modify the enterClub() and leaveClub() methods to ensure that the threads are notified when club is no longer at capacity
+
+commit eb542ae9045ee2554c5109ccca832eafb6ed4f37
+Author: Lehlohonolo Mosikili <mskleh001@myuct.ac.za>
+Date:   Fri Aug 25 03:06:09 2023 +0200
+
+    Unsynchronize move() method
+
+commit e21f669946e113000db464626ac9ecf71345ee55
+Author: Lehlohonolo Mosikili <mskleh001@myuct.ac.za>
+Date:   Fri Aug 25 03:05:58 2023 +0200
+
+    Unsynchronize move() method
+
+commit d615b40c1d18b275f7041663f02739797c0637ff
+Author: Lehlohonolo Mosikili <mskleh001@myuct.ac.za>
+Date:   Fri Aug 25 00:56:15 2023 +0200
+
+    Check for overCapacity() or occupied() after the person has arrived
+
+commit 4f35a327251c22b6901d8877d8eea5d38314c913
+Author: Lehlohonolo Mosikili <mskleh001@myuct.ac.za>
+Date:   Fri Aug 25 00:41:59 2023 +0200
+
+    Check for overCapacity() or occupied() only after the thread is in Room
+
+commit 34297b278d0f2fbbd38ca02d6f55c7afba18c89d
+Author: Lehlohonolo Mosikili <mskleh001@myuct.ac.za>
+Date:   Fri Aug 25 00:29:41 2023 +0200
+
+    Move entrance notifyAll() method in the leaveClub() method
+
+commit 84cf1e7113ea5cbcff31e32b13f031892262c4cb
+Author: Lehlohonolo Mosikili <mskleh001@myuct.ac.za>
+Date:   Fri Aug 25 00:24:00 2023 +0200
+
+    Check overCapacity only after the setInRoom() is false
+
+commit c1beba5eefe8c38220ba2d22fdaf9af3c3d138d1
+Author: Lehlohonolo Mosikili <mskleh001@myuct.ac.za>
+Date:   Fri Aug 25 00:14:13 2023 +0200
+
+    Put personLeft() method in the synchronized block
+
+commit a957545c09c3bdbd5b58aa6f2aa8117f67d6afb6
+Author: Lehlohonolo Mosikili <mskleh001@myuct.ac.za>
+Date:   Fri Aug 25 00:00:10 2023 +0200
+
+    Release the entrance lock in the enterClub() method
+
+commit 1c575eb1ccf66dea36bc4ff670c197b5e89c00ab
+Author: Lehlohonolo Mosikili <mskleh001@myuct.ac.za>
+Date:   Thu Aug 24 23:09:59 2023 +0200
+
+    Add untracked files
+
+commit cc80ab2183d08d4352c3188671e810ba8fdcddc0
+Author: Lehlohonolo Mosikili <mskleh001@myuct.ac.za>
+Date:   Thu Aug 24 23:05:47 2023 +0200
+
+    Add comments
+
+commit 22acc85188039985ed76eaa4e0a8018a89a9cd1e
+Author: Lehlohonolo Mosikili <mskleh001@myuct.ac.za>
+Date:   Thu Aug 24 21:06:41 2023 +0200
+
+    Use release() method to notify threads that the entrance in no longer occupied
+
+commit 399fa3a145f6ed116c73af631ec30f5a3382bf12
+Author: Lehlohonolo Mosikili <mskleh001@myuct.ac.za>
+Date:   Thu Aug 24 20:23:40 2023 +0200
+
+    Declare new overCapacity and isOccupied variables
+
+commit b76ce0a1d9cd7e48d3b79c380f0b6727d751d6fb
+Author: Lehlohonolo Mosikili <mskleh001@myuct.ac.za>
+Date:   Thu Aug 24 03:35:29 2023 +0200
+
+    Change the if statement to while
+
+commit 3750ee0e1e65bb32e088c26b4049765911a5e30c
+Author: Lehlohonolo Mosikili <mskleh001@myuct.ac.za>
+Date:   Thu Aug 24 03:27:57 2023 +0200
+
+    Make sure overCapacity() and occupied condi()tions evaluate to true so that  that threads do not wait to access the exit door
+
+commit 2ae9aa4e7e3b5e042d52d03c0e949f409202bb04
+Author: Lehlohonolo Mosikili <mskleh001@myuct.ac.za>
+Date:   Thu Aug 24 03:03:01 2023 +0200
+
+    Put the overCapacity() and occupied() conditins under an if statement
+
+commit 758e505ad265edc9121626950e05a4775aa980db
+Author: Lehlohonolo Mosikili <mskleh001@myuct.ac.za>
+Date:   Thu Aug 24 02:55:55 2023 +0200
+
+    Check the state of overCapacity() and occupied() before using notifyAll() method
+
+commit b167b1df4c35f6a940924bf25e7f3dc350cf0161
+Author: Lehlohonolo Mosikili <mskleh001@myuct.ac.za>
+Date:   Thu Aug 24 02:25:14 2023 +0200
+
+    Remove the latch implementation rather use condition variables for the entrance
+
+commit 5366c76900d674d1be741164421632ce118f428f
+Author: Lehlohonolo Mosikili <mskleh001@myuct.ac.za>
+Date:   Wed Aug 23 21:22:59 2023 +0200
+
+    Make the latch have two tasks to ensure that only one thread accesses the entrance door
+
+commit 3793d3d67de40f1bdd73ef5bbc16197cfebe0edb
+Author: Lehlohonolo Mosikili <mskleh001@myuct.ac.za>
+Date:   Wed Aug 23 14:11:54 2023 +0200
+
+    Synchronize the latch object
+
+commit 02954023ce36f23354e4848c8035992b9314b19a
+Author: Lehlohonolo Mosikili <mskleh001@myuct.ac.za>
+Date:   Wed Aug 23 13:31:34 2023 +0200
+
+    Synchronize the pausedSimulation flag to ensure consistency
+
+commit db970a85779bb5056c27eea422ebcae777542921
+Author: Lehlohonolo Mosikili <mskleh001@myuct.ac.za>
+Date:   Wed Aug 23 12:51:43 2023 +0200
+
+    Fix the latch
+
+commit d2e8b39cbbe44679ddf6a9ff369ed168cc613e54
+Author: Lehlohonolo Mosikili <mskleh001@myuct.ac.za>
+Date:   Wed Aug 23 12:30:02 2023 +0200
+
+    Synchronize to ensure that only one clubgoer accesses the door
+
+commit 848595e53f934a5307ece13cdb71cb3513fa2d40
+Author: Lehlohonolo Mosikili <mskleh001@myuct.ac.za>
+Date:   Wed Aug 23 12:19:40 2023 +0200
+
+    Protect the assignment of the clubGrid to club object
+
+commit 62b6e6d948d93b46553d90cfe7f5a57d68cede90
+Author: Lehlohonolo Mosikili <mskleh001@myuct.ac.za>
+Date:   Tue Aug 22 21:38:26 2023 +0200
+
+    Fix the checkPause() method to ensure that threads resume
+
+commit a0d140888e85752f2f370fbdb145ea931f1009bd
+Author: Lehlohonolo Mosikili <mskleh001@myuct.ac.za>
+Date:   Tue Aug 22 20:30:28 2023 +0200
+
+    Unsychronize the entrance object
+
+commit f40bb424a8cc38c82d4817747dce714efc984b2c
+Author: Lehlohonolo Mosikili <mskleh001@myuct.ac.za>
+Date:   Tue Aug 22 20:10:39 2023 +0200
+
+    Synchronize the enterClub() entrance object
+
+commit f66adfb2f574c6885f9888a110816f029f391b5e
+Author: Lehlohonolo Mosikili <mskleh001@myuct.ac.za>
+Date:   Tue Aug 22 20:03:36 2023 +0200
+
+    Use entrance object to allow threads to wait when capacity is reached
+
+commit 582725f3de734f02a9bde1a7affb6dd3a747a884
+Author: Lehlohonolo Mosikili <mskleh001@myuct.ac.za>
+Date:   Tue Aug 22 19:55:49 2023 +0200
+
+    Remove the notifyAll() method in the enterClub()
+
+commit 991c7873d762a84e32dfd42d06e25f3b137c02cf
+Author: Lehlohonolo Mosikili <mskleh001@myuct.ac.za>
+Date:   Tue Aug 22 19:54:15 2023 +0200
+
+    Add notifyAll() in both enterClub() and leaveClub() method
+
+commit 567fb0498754de8acc297f345992a48d94a429ea
+Author: Lehlohonolo Mosikili <mskleh001@myuct.ac.za>
+Date:   Mon Aug 21 02:20:59 2023 +0200
+
+    Put the overCapacity method in the while loop and call the wait() method
+
+commit 84153376c4cfafc2d7deb386e6d02393be78be64
+Author: Lehlohonolo Mosikili <mskleh001@myuct.ac.za>
+Date:   Mon Aug 21 00:12:24 2023 +0200
+
+    Invoke overcapacity method after the personArrived method
+
+commit 6da2d88249b32a35767cff1efdf27071dcd2b7a8
+Author: Lehlohonolo Mosikili <mskleh001@myuct.ac.za>
+Date:   Sun Aug 20 23:08:17 2023 +0200
+
+    Invoke overcapaacity method to check whether the club is over capacity or not
+
+commit ba5c5da90b6ec6cbbc691cdde31a8fb29ad54c5a
+Author: Lehlohonolo Mosikili <mskleh001@myuct.ac.za>
+Date:   Sat Aug 19 01:16:25 2023 +0200
+
+    Use a latch for threads to wait at gate before the start button is pressed
+
+commit 7599de033bbfdb63c3ffd0ee3e773556c9ce6813
+Author: Lehlohonolo Mosikili <mskleh001@myuct.ac.za>
+Date:   Fri Aug 18 21:39:30 2023 +0200
+
+    Change the button text to Resume when it's clicked
+
+commit 3f08bd509aef047cc0f46a9398b5035acceb61f2
+Author: Lehlohonolo Mosikili <mskleh001@myuct.ac.za>
+Date:   Fri Aug 18 01:47:27 2023 +0200
+
+    Add an if-else statement to pause/resume the simulation
+
+commit 3547db3d8c966d25a30f64395ade8cdc13f37b89
+Author: Lehlohonolo Mosikili <mskleh001@myuct.ac.za>
+Date:   Fri Aug 18 01:28:00 2023 +0200
+
+    Fix the pause button to behave appropriately simulation was freezing
+
+commit 9dac2aa441779628cb8313f1a254ab69a92f31de
+Author: Lehlohonolo Mosikili <mskleh001@myuct.ac.za>
+Date:   Fri Aug 18 01:15:30 2023 +0200
+
+    Remove redundant code on ClubSimulation to resume the simulation(not working)
+
+commit 549c45821c5666d70ea645ed9a902426c23b5bca
+Author: Lehlohonolo Mosikili <mskleh001@myuct.ac.za>
+Date:   Fri Aug 18 00:10:37 2023 +0200
+
+    Fix ClubGrid leave club method
+
+commit 521abb4404b499931581164fccb5e51f27e9da69
+Author: Lehlohonolo Mosikili <mskleh001@myuct.ac.za>
+Date:   Fri Aug 18 00:06:02 2023 +0200
+
+    Synchronize the exit object of ClubGrid
+
+commit 06fe7e4fb189a929827c7613f288adb2fcbd0865
+Author: Lehlohonolo Mosikili <mskleh001@myuct.ac.za>
+Date:   Thu Aug 17 23:36:30 2023 +0200
+
+    change isExit, isBar, isDance of GridBlock to AtomicBoolean
+
+commit 3fa035a1bce46d77ee3aa7dd05bf50ed54de4cb6
+Author: Lehlohonolo Mosikili <mskleh001@myuct.ac.za>
+Date:   Thu Aug 17 23:03:25 2023 +0200
+
+    Fix the checkPause() method of ClubGoer
+
+commit 88646e3b3ec6f44b31e37515801500d41d936f7a
+Author: Lehlohonolo Mosikili <mskleh001@myuct.ac.za>
+Date:   Thu Aug 17 23:01:34 2023 +0200
+
+    Synchronize all methods methods shared of GridBlock and ClubGrid
+
+commit de32b1de5668448d78b33e74b4bdc436bc6d031b
+Author: Lehlohonolo Mosikili <mskleh001@myuct.ac.za>
+Date:   Thu Aug 17 22:57:28 2023 +0200
+
+    Synchronize all getters and setters in GridBlock class
+
+commit b98503fd62be88b3b8be00e2470a3bd6ebc8dcda
+Author: Lehlohonolo Mosikili <mskleh001@myuct.ac.za>
+Date:   Thu Aug 17 03:05:25 2023 +0200
+
+    Fix checkPause() method
+
+commit 0442cc57a7dbdd75a5db5727420a561243fa44bb
+Author: Lehlohonolo Mosikili <mskleh001@myuct.ac.za>
+Date:   Thu Aug 17 02:47:02 2023 +0200
+
+    Fix startSim() method
+
+commit 78c03411eb91b826f9e99a328062414d67011b8c
+Author: Lehlohonolo Mosikili <mskleh001@myuct.ac.za>
+Date:   Thu Aug 17 02:00:59 2023 +0200
+
+    Synchronize the ClubGrid grid shared object in the ClubView
+
+commit fd1049d14f12e8c99cfda9d847a0903bcaa628f9
+Author: Lehlohonolo Mosikili <mskleh001@myuct.ac.za>
+Date:   Thu Aug 17 01:49:52 2023 +0200
+
+    Synchronize the club shared object of the ClubGrid before using it
+
+commit 59625ac66c6c04eb4d29c8eace87859a75e45bf8
+Author: Lehlohonolo Mosikili <mskleh001@myuct.ac.za>
+Date:   Thu Aug 17 00:19:47 2023 +0200
+
+    Change the coordinate of the block to atomic integer to ensure only one thread can access it
+
+commit 23bdd6d034d8718fac545645219fd1a8b6e9e98e
+Author: Lehlohonolo Mosikili <mskleh001@myuct.ac.za>
+Date:   Thu Aug 17 00:02:01 2023 +0200
+
+    Change isOccupied to atomic integer
+
+commit b687565314b715358b3617c71d27aafa28abac6e
+Author: Lehlohonolo Mosikili <mskleh001@myuct.ac.za>
+Date:   Wed Aug 16 23:34:33 2023 +0200
+
+    use AtomicBoolean tto pause and resume the simulation
+
+commit be2a8d7a711864faf6a812a24826375c65b18cba
+Author: Lehlohonolo Mosikili <mskleh001@myuct.ac.za>
+Date:   Wed Aug 16 22:03:36 2023 +0200
+
+    Ensure that patrons adhere to pause and start the simulation
+
+commit 41f0a821b0ddf458c26427ca4cb8ff2a2b95d1e7
+Author: Lehlohonolo Mosikili <mskleh001@myuct.ac.za>
+Date:   Wed Aug 16 21:48:57 2023 +0200
+
+    Synchronize the patrons object
+
+commit 570977a36773f85656d245f4070ea7ba9fac2bbc
+Author: Lehlohonolo Mosikili <mskleh001@myuct.ac.za>
+Date:   Wed Aug 16 21:22:42 2023 +0200
+
+    Pause the patrons
+
+commit 547c261b9556c976a9d06a7db87a5367d38f5133
+Author: Lehlohonolo Mosikili <mskleh001@myuct.ac.za>
+Date:   Wed Aug 16 19:37:38 2023 +0200
+
+    Fix the how the simulation starts (fix the start button)
+
+commit 334c3d22a24270518f9d16da0060635654965411
+Author: Lehlohonolo Mosikili <mskleh001@myuct.ac.za>
+Date:   Tue Aug 15 22:54:13 2023 +0200
+
+    Start threads
